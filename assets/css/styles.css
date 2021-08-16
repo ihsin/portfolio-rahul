@@ -289,7 +289,7 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
+  width: 90%;
 }
 .skills__css{
   width: 85%;
@@ -299,6 +299,12 @@ img{
 }
 .skills__ux{
   width: 85%;
+}
+.skills__docker{
+  width: 75%;
+}
+.skills__lsf{
+  width: 70%;
 }
 .skills__img{
   border-radius: .5rem;
