@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import mysql.connector
+from werkzeug.exceptions import RequestEntityTooLarge
 
 config = {
   'user': 'root',
@@ -20,6 +21,19 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+def insertFeedback(name, email, feedback):
+    sql = ""
+    sql +="INSERT INTO "
+
+@app.route('/', methods = ["POST", "GET"])
+def takeFeedback():
+    if request.method == "POST":
+        name = request.form["name"]
+        email = request.form["email"]
+        feedback = request.form["feedback"]
+
+        print("{} \n {} \n {}".format(name, email, feedback))
+        return render_template('index.html', anchor="contact")
 
 if __name__=='__main__':
     app.run(debug=True)
