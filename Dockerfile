@@ -1,7 +1,7 @@
 # Use an official Python runtime as an image
 FROM python:3.6
 
-EXPOSE 5000
+EXPOSE 8080
 
 WORKDIR /app
 

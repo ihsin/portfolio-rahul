@@ -8,7 +8,7 @@ services:
     depends_on: 
       - db
     ports:
-      - "5000:5000"
+      - "8080:8080"
   db:
     container_name: portfolio-db
     image: mysql:5.7
