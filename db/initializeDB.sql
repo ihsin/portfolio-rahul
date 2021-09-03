@@ -1,0 +1,3 @@
+-- CREATE DATABASE feedback;
+use feedback;
+CREATE TABLE IF NOT EXISTS CONTACT;
